@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Pokemons"
+            android:title="Pokemons"
+           android:icon="@android:drawable/ic_media_play" >
+
+        </item>
+        <item
+            android:id="@+id/Types"
+            android:title="Types"
+            android:icon="@android:drawable/ic_media_play"
+            >
+
+        </item>
+        <item
+            android:id="@+id/regions"
+            android:title="Regions"
+            android:icon="@android:drawable/ic_media_play"
+           >
+
+        </item>
+        <item
+            android:id="@+id/favourites"
+            android:title="Favourites"
+            android:icon="@android:drawable/star_on"
+        >
+
+        </item>
+    </group>
+
+</menu>
