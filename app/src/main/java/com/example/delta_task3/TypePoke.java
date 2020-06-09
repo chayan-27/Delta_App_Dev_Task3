@@ -159,7 +159,7 @@ public class TypePoke extends AppCompatActivity {
                                 for(EvolvesTo evolvesTo:evolvesTos){
                                     List<EvolvesTo_> evolvesTos1=evolvesTo.getEvolvesTo();
                                     for(EvolvesTo_ evolvesTo_:evolvesTos1){
-                                         name=evolvesTo_.getSpecies().getName()+"\n↓";
+                                         name=evolvesTo_.getSpecies().getName()+"\n↑";
                                        unique=evolvesTo_.getSpecies().getUrl();
                                         id = unique.substring(unique.lastIndexOf("/", unique.length() - 2) + 1, unique.length() - 1);
                                         list.add(name);
@@ -167,7 +167,7 @@ public class TypePoke extends AppCompatActivity {
 
                                     }
 
-                                    list.add(evolvesTo.getSpecies().getName()+"\n↓");
+                                    list.add(evolvesTo.getSpecies().getName()+"\n↑");
                                     unique=evolvesTo.getSpecies().getUrl();
                                     id = unique.substring(unique.lastIndexOf("/", unique.length() - 2) + 1, unique.length() - 1);
                                     list1.add(id);

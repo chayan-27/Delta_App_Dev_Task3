@@ -187,7 +187,9 @@ public class TypeAdapter extends RecyclerView.Adapter<TypeAdapter.TypeHolder> im
                 }
             } else if (check.equals("region3")) {
                 typeHolder.imageView.setVisibility(View.VISIBLE);
-                Picasso.get().load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ids[i] + ".png").into(typeHolder.imageView);
+                try {
+                    Picasso.get().load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ids[i] + ".png").into(typeHolder.imageView);
+                }catch (Exception e){}
                 typeHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
                     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
                     @Override
@@ -239,8 +241,10 @@ public class TypeAdapter extends RecyclerView.Adapter<TypeAdapter.TypeHolder> im
                 });
 
             } else if (check.equals("evolution")) {
-                typeHolder.imageView.setVisibility(View.VISIBLE);
-                Picasso.get().load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ids[i] + ".png").into(typeHolder.imageView);
+                try {
+                    typeHolder.imageView.setVisibility(View.VISIBLE);
+                    Picasso.get().load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + ids[i] + ".png").into(typeHolder.imageView);
+                }catch (Exception e){}
 
             }
         }

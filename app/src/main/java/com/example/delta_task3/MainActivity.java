@@ -282,6 +282,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.favourites:
+                        sharebody = "FAVOURITES\n\n";
                         System.out.println("Favourites");
                         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
                         offset = 0;
